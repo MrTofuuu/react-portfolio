@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Footer() {
     return (
-        <footer>
+        <footer className='footer--pin'>
             <ul>
                 <li><h1>Contact Me</h1></li>
                 <li><a href="mailto: chris@chrisstallcup.com">Email</a></li>

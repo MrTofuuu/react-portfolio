@@ -1,14 +1,11 @@
-import React from "react";
-import PortfolioContainer from "./components/PortfolioContainer";
-import Footer from "./components/Footer";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+import App from './App';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-function App() {
-  return (
-  <div>
-   <PortfolioContainer />
-   <Footer />
-  </div>
-  )
-};
+ReactDOM.render(
+  <App />,
+  document.getElementById('root')
+);
 
-export default App;

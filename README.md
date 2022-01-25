@@ -45,7 +45,7 @@ npm run start
 ### **Links**
 
 [Link to the code repository](https://github.com/MrTofuuu/react-portfolio)
-[Link to application](https://react-portfolio.herokuapp.com/)
+[Link to the deployed website](https://mrtofuuu.github.io/react-portfolio/)
 
 ## Credits
 Chris Stallcup

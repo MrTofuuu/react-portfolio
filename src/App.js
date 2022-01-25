@@ -4,10 +4,10 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div>
+    <header class="parallax">
       <PortfolioContainer />
       <Footer />
-    </div>
+    </header>
   )
 };
 

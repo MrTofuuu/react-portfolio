@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
-import NavTabs from './Nav';
+import NavTabs from './NavTabs';
 import Home from './pages/Home';
 import About from './pages/About';
 import Projects from './pages/Projects';
+import Contact from './pages/Contact';
 
 export default function PortfolioContainer() {
     const [currentPage, setCurrentPage] = useState('Home');
@@ -15,6 +16,8 @@ export default function PortfolioContainer() {
                 return <About />;
             case 'Projects':
                 return <Projects />;
+            case 'Contact':
+                return <Contact />;
             default:
                 console.log('default switch case has been triggered');
         }
@@ -25,8 +28,10 @@ export default function PortfolioContainer() {
 
     return (
         <div>
-            <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
-            {renderPage()}
-        </div>
+      {/* We are passing the currentPage from state and the function to update it */}
+      <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
+      {/* Here we are calling the renderPage method which will return a component  */}
+      {renderPage()}
+    </div>
     );
 }
